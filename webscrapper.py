@@ -3,13 +3,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from oauth2client.service_account import ServiceAccountCredentials
 import gspread
-import time
 
 
 driver = webdriver.Chrome()
 driver.get("http://quotes.toscrape.com/")
 
-# time.sleep(20)
 
 scopes = [
     'http://www.googleapis.com/auth/spreadsheets'
